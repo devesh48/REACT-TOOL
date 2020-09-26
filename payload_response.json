@@ -6,9 +6,21 @@ paload :
 
 
 service response : 
+[{
+"option1" : "Value1",
+"option2" : "value2",
+"option3" : "value3",
+"option4" : "value4"
+},
 {
 "option1" : "Value1",
 "option2" : "value2",
 "option3" : "value3",
 "option4" : "value4"
-}
+},
+{
+"option1" : "Value1",
+"option2" : "value2",
+"option3" : "value3",
+"option4" : "value4"
+}]
