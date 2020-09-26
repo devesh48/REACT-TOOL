@@ -24,3 +24,21 @@ service response :
 "option3" : "value3",
 "option4" : "value4"
 }]
+
+
+payload for add option :
+{"tab" : "circle", "option1" : "newValue1","option2" : "newValue2", "option3" : "newValue3", "operation" : "ADD"}
+service response :
+{"status" : "Success"} [Note : after add operation, when you recieve status success just re-send payload = {"tab" : "circle"/"technology"/"option3"} so that table displayed will be refreshed]
+{"status" : "Failure"} [if failure just display insertion failed]
+ 
+payload for edit option : 
+{"tab" : "circle", "option1" : "newValue1","option2" : "newValue2", "option3" : "newValue3", "operation" : "edit"}
+{"status" : "Success"} [Note : after edit operation, when you recieve status success just re-send payload = {"tab" : "circle"/"technology"/"option3"} so that table displayed will be refreshed]
+{"status" : "Failure"} [if failure just display insertion failed]
+
+
+payload for delete option : 
+{"tab" : "circle", "option1" : "newValue1","option2" : "newValue2", "option3" : "newValue3", "operation" : "delete"}
+{"status" : "Success"} [Note : after edit operation, when you recieve status success just re-send payload = {"tab" : "circle"/"technology"/"option3"} so that table displayed will be refreshed]
+{"status" : "Failure"} [if failure just display insertion failed]
